@@ -1,0 +1,8 @@
+node_modules/
+
+# Ignorer alle filer i src-mappen
+src/**/*
+
+# Unntak for spesifikke filer eller mapper
+!src/App.tsx
+!src/components/**/*.tsx
