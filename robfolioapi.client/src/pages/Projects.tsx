@@ -20,7 +20,14 @@ const Projects = () => {
                     <a href="https://github.com/Robbelure/dip-scooper.git" className="project-link" target="_blank" rel="noopener noreferrer">
                         View Code on GitHub
                     </a>
-                </div>           
+                </div> 
+                <div className="project-card">
+                    <h2>RobFolio</h2>
+                    <p>A personal portfolio website.</p>
+                    <a href="https://github.com/Robbelure/rob-folio.git" className="project-link" target="_blank" rel="noopener noreferrer">
+                        View Code on GitHub
+                    </a>
+                </div>          
             </div>
         </div>
     );

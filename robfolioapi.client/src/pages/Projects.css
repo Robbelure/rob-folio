@@ -9,7 +9,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.87);
     position: relative;
 }
 
@@ -40,7 +39,7 @@
 }
 
 .project-card {
-    background: rgb(199, 199, 199); 
+    background: rgb(194, 194, 194); 
     color: black;
     padding: 20px;
     border-radius: 10px;

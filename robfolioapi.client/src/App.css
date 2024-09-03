@@ -155,20 +155,6 @@ tr:hover {
     z-index: 2;
 }
 
-.about-content {
-    margin-left: 300px; 
-    flex-grow: 1;
-    background-size: cover; 
-    background-position: center; 
-    overflow-y: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-    height: 100vh;
-    position: relative;
-}
-
 .about-content::before {
     content: '';
     position: absolute;
@@ -178,17 +164,6 @@ tr:hover {
     bottom: 0;
     background: rgba(0, 0, 0, 0.3); 
     z-index: 0; 
-}
-
-@media (max-width: 768px) {
-    .about-sidebar {
-        width: 100%;
-        position: relative;
-        height: auto;
-    }
-    .about-content {
-        margin-left: 0;
-    }
 }
 
 .projects {
