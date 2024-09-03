@@ -36,3 +36,10 @@ Follow these steps to get the project up and running locally:
 
    This will start the Vite development server. Open your browser and go to https://localhost:5173/ to view the project.
    
+## Technologies Used
+
+- **TypeScript**: For type-safe JavaScript development.
+- **React**: For building the user interface.
+- **Vite**: As the development server and build tool.
+- **MUI (Material-UI)**: For UI components and styling.
+- **ESLint**: For maintaining code quality and consistency.
