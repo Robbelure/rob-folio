@@ -9,7 +9,7 @@ const Projects = () => {
             <div className="project-list">
                 <div className="project-card">
                     <h2>ReviewHub</h2>
-                    <p>A website where users can create accounts to post reviews, comment on others, and upload movie posters.</p>
+                    <p>A website where users can create accounts to post movie reviews and comment on others.</p>
                     <a href="https://github.com/Robbelure/ProsjektOppgave.git" className="project-link" target="_blank" rel="noopener noreferrer">
                         View Code on GitHub
                     </a>
