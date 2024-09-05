@@ -1,7 +1,6 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// Definer __dirname i ESM
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default {

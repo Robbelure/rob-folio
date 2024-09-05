@@ -1,28 +1,41 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import './App.css';
-import './pages/Contact.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; 
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Home from './pages/Home'; 
+import Projects from './pages/Projects'; 
 import ThemeProviderWrapper from './ThemeProviderWrapper'; 
+import styles from './App.module.css';
 
 function App() {
     return (
-        <ThemeProviderWrapper> {/* Legger ThemeProviderWrapper rundt alt innhold */}
+        <ThemeProviderWrapper>
             <Router>
-                <div className="navbar">
+                <div className={styles.navbar}>
                     <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
                     <Link to="/projects">Projects</Link>
-                    <Link to="/contact">Contact</Link>
                 </div>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/projects" element={<Projects />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
+
+                <div className={styles.appContainer}>
+                    <TransitionGroup>
+                        <CSSTransition timeout={300} classNames="fade">
+                            <Routes>
+                                <Route path="/" element={<Home />} />
+                                <Route path="/projects" element={<Projects />} />
+                            </Routes>
+                        </CSSTransition>
+                    </TransitionGroup>
+                   
+                    <footer className={styles.footer}>
+                        <p className={styles.connectTitle}>Let's connect</p>
+                        <div className={styles.socialLinks}>
+                            <a href="https://github.com/Robbelure" target="_blank" rel="noopener noreferrer">GitHub</a> |
+                            <a href="https://linkedin.com/in/robin-brendsrød" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+                            <a href="mailto:Robinbrendsrod@gmail.com">Email</a>
+                        </div>
+                        <p className={styles.copyright}>
+                            © Robin Brendsrød 2024 | All Rights Reserved
+                        </p>
+                    </footer>
+                </div>
             </Router>
         </ThemeProviderWrapper>
     );

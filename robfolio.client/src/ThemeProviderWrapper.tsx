@@ -19,7 +19,6 @@ interface ThemeProviderWrapperProps {
   children: ReactNode;
 }
 
-// ThemeProviderWrapper komponent
 const ThemeProviderWrapper: React.FC<ThemeProviderWrapperProps> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
