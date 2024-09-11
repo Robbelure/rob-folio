@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Tre uavhengige kolonner */
-    grid-template-rows: 1fr 2fr; /* To rader med definert høyde */
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 2fr; 
     gap: 20px;
     height: calc(100vh - 60px);
     width: 100vw;
@@ -33,12 +33,11 @@
 }
 .textWrapper h1 {
     color: #1abc9c;
-    /*color: #06090a;*/
     font-size: 2.8rem; 
 }
 .additionalText {
+    margin-top: 30px;
     color: #ECECEC;
-    /*color: #bdba1f;*/
     font-size: 1.2rem; 
     line-height: 1.6;
     font-weight: 500;
@@ -57,7 +56,6 @@
         grid-column: 1; 
     }
 }
-
 
 /*
 .aboutMe {

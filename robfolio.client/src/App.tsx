@@ -25,7 +25,6 @@ function App() {
                     </TransitionGroup>
                    
                     <footer className={styles.footer}>
-                        {/*<p className={styles.connectTitle}>Let's connect</p>*/}
                         <div className={styles.socialLinks}>
                             <a href="https://github.com/Robbelure" target="_blank" rel="noopener noreferrer">GitHub</a> |
                             <a href="https://linkedin.com/in/robin-brendsrød" target="_blank" rel="noopener noreferrer">LinkedIn</a> |

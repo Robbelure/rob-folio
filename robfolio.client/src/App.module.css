@@ -86,17 +86,17 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Sentraliserer innholdet vertikalt */
-    align-items: center; /* Sentraliserer innholdet horisontalt */
+    justify-content: center;
+    align-items: center; 
     box-sizing: border-box;
-    min-height: 60px; /* Sørger for at footeren har en minimumshøyde */
+    min-height: 60px; 
     position: relative; 
     z-index: 2;
     flex-shrink: 0;
 }
 
 .socialLinks {
-    margin-top: 4px; /* Reduser marginen for å justere plasseringen */
+    margin-top: 4px; 
     margin-bottom: 5px;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .socialLinks a:hover {
-    color: #1abc9c; /* Endrer fargen ved hover */
+    color: #1abc9c; 
 }
 
 .copyright {

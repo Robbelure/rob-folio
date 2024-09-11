@@ -1,4 +1,4 @@
-/* index.css - Globale typografiregler og font-importer */
+/* index.css - Global */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 :root {
@@ -7,15 +7,15 @@
   line-height: 1.5;
 }
 
-/* Global background image applied to the entire page */
+/* Global background image */
 body, html {
   height: 100%;
   margin: 0;
-  background-image: url('./assets/images/background1.jpeg'); /* Replace with correct path */
-  background-size: cover; /* Ensures the image covers the entire screen */
-  background-position: center; /* Centers the background image */
-  background-attachment: fixed; /* Keeps the background fixed during scrolling */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-image: url('./assets/images/background1.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
 }
 
 body {
