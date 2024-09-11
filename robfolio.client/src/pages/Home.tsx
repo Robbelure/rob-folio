@@ -9,12 +9,13 @@ const Home = () => {
     }, []);
 
     return (
-        <div className={`${styles.contentWrapper} ${visible ? styles.visible : ''}`}>
+        <div className={styles.container}>
             <div className={styles.textWrapper}>
-                <h1>Robin Brendsrød</h1>
-                <p className={styles.additionalText}>Explore my digital playground</p>
+                <h1>Heisann.</h1>
+                <p className={styles.additionalText}>
+                I'm Robin Brendsrød, a backend developer proficient in .NET, MySQL, API development, and data modeling.
+                Additionally, I have hands-on experience with React/TypeScript/JavaScript, AWS and Docker</p>
             </div>
-            <div className={styles.imageWrapper}></div>
         </div>
     );
 };

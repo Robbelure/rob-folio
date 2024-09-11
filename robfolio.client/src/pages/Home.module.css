@@ -1,25 +1,15 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; 
-    overflow: hidden;  
-}
-
-.contentWrapper {
-    background-image: url('../assets/images/background1.jpeg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: calc(100vh - 60px); 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tre uavhengige kolonner */
+    grid-template-rows: 1fr 2fr; /* To rader med definert høyde */
+    gap: 20px;
+    height: calc(100vh - 60px);
     width: 100vw;
-    padding-top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    position: relative;
 }
 
-.contentWrapper::before {
+.container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -30,17 +20,106 @@ html, body {
     z-index: 1; 
 }
 
-
 .textWrapper {
-    z-index: 2; 
+    grid-column: 2;
+    grid-row: 1; 
     text-align: center;
+    align-self: center; 
+    justify-self: center; 
+    z-index: 10; 
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    position: relative;
+    margin-top: 200px;
+}
+.textWrapper h1 {
+    color: #1abc9c;
+    /*color: #06090a;*/
+    font-size: 2.8rem; 
+}
+.additionalText {
+    color: #ECECEC;
+    /*color: #bdba1f;*/
+    font-size: 1.2rem; 
+    line-height: 1.6;
+    font-weight: 500;
 }
 
-.additionalText {
-    color: rgba(255, 255, 255, 1);
-    font-size: 1.2rem;
-    margin-top: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; 
+    }
+
+    .projectCard {
+        min-width: 100%;
+    }
+
+    .textWrapper {
+        grid-column: 1; 
+    }
 }
+
+
+/*
+.aboutMe {
+    grid-column: 1; 
+    grid-row: 1; 
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 20px;
+    border-radius: 10px;
+    align-self: flex-start;
+    width: 80%; 
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    z-index: 1; 
+}
+
+.aboutMe h2 {
+    font-size: 2rem;
+    color: #1abc9c;  
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin-bottom: 15px;
+}
+
+.aboutMe p {
+    font-size: 1.2rem; 
+    color: rgba(255, 255, 255, 0.87); 
+    line-height: 1.6; 
+    margin-bottom: 10px; 
+}
+
+.projectSection {
+    grid-column: 3; 
+    grid-row: 2; 
+     
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: flex-end;
+    margin-left: auto;
+    padding-right: 20px; 
+}
+
+.projectCard {
+    background: rgb(194, 194, 194);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.projectCard h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.projectLink {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+*/
+

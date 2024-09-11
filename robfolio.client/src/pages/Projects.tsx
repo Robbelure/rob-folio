@@ -17,18 +17,18 @@ const Projects = () => {
                     <a href="https://github.com/Robbelure/ProsjektOppgave.git" className={styles.projectLink}>
                         View Code on GitHub
                     </a>
+                </div>               
+                <div className={styles.projectCard}>
+                    <h2>RobFolio</h2>
+                    <p>A personal portfolio website.</p>
+                    <a href="https://github.com/Robbelure/rob-folio.git" className={styles.projectLink}>
+                        View Code on GitHub
+                    </a>
                 </div>
                 <div className={styles.projectCard}>
                     <h2>DipScooper</h2>
                     <p>A tool for analyzing stock data.</p>
                     <a href="https://github.com/Robbelure/dip-scooper.git" className={styles.projectLink}>
-                        View Code on GitHub
-                    </a>
-                </div>
-                <div className={styles.projectCard}>
-                    <h2>RobFolio</h2>
-                    <p>A personal portfolio website.</p>
-                    <a href="https://github.com/Robbelure/rob-folio.git" className={styles.projectLink}>
                         View Code on GitHub
                     </a>
                 </div>

@@ -7,6 +7,17 @@
   line-height: 1.5;
 }
 
+/* Global background image applied to the entire page */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url('./assets/images/background1.jpeg'); /* Replace with correct path */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
 body {
   margin: 0;
   padding: 0;

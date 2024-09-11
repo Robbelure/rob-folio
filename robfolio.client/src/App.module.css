@@ -1,14 +1,18 @@
 ﻿.navbar {
-    width: 100%;
-    background-color: #333;
-    color: white;
+    width: 100vw; 
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: flex-start;
+    padding: 10px 20px;
     position: fixed;
+    gap: 20px;
     top: 0;
-    z-index: 1000;
-    gap: 75px;
+    left: 0; 
+    right: 0; 
+    z-index: 2;
+    box-sizing: border-box; 
+    margin: 0;
+    
 }
 
 .navbar a {
@@ -16,14 +20,27 @@
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease; 
-    outline: none; 
+    outline: none;
+    padding: 5px 10px; 
 }
 
 .navbar a:hover, .navbar a:focus {
     color: #1abc9c;
     transform: translateY(-3px); 
-    outline: none; 
-    border: none; 
+    outline: none;
+}
+
+/* Media query for mobil */
+@media (max-width: 768px) {
+    .navbar {
+        align-items: center;
+    }
+    
+    .navbar a {
+        padding: 10px 0; 
+        width: 100%; 
+        text-align: center; 
+    }
 }
 
 .button {
@@ -57,40 +74,40 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+    margin-bottom: 7px;
 }
 
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
 
 .footer {
-    padding: 20px;
-    background-color: rgba(43, 43, 43, 0.8); /* Bruk rgba for å gi kun bakgrunnen opasitet */
+    padding: 5px 20px; 
+    background-color: rgba(0, 0, 0, 0.856);
     color: white;
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100px; 
-}
-
-.connectTitle {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+    justify-content: center; /* Sentraliserer innholdet vertikalt */
+    align-items: center; /* Sentraliserer innholdet horisontalt */
+    box-sizing: border-box;
+    min-height: 60px; /* Sørger for at footeren har en minimumshøyde */
+    position: relative; 
+    z-index: 2;
+    flex-shrink: 0;
 }
 
 .socialLinks {
-    margin-bottom: 90px;
+    margin-top: 4px; /* Reduser marginen for å justere plasseringen */
+    margin-bottom: 5px;
+}
+
+.connectTitle {
+    color: #1abc9c;
+    font-size: 1.5rem;
+    font-weight: bold; 
 }
 
 .socialLinks a {
-    color: white; 
+    color: white;
     text-decoration: none;
     margin: 0 10px;
     font-weight: normal;
@@ -98,13 +115,13 @@ main {
 }
 
 .socialLinks a:hover {
-    color: #1abc9c; 
+    color: #1abc9c; /* Endrer fargen ved hover */
 }
 
 .copyright {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #cccccc;
-    margin-top: 10px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
