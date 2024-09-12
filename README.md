@@ -2,5 +2,5 @@
 
 ## My personal portfolio website
 
-![Skjermbilde av prosjektene](https://raw.githubusercontent.com/Robbelure/rob-folio/main/robfolio-projects.PNG)
+![Skjermbilde av prosjektene](https://github.com/Robbelure/rob-folio/blob/main/robfolio.PNG)
 
